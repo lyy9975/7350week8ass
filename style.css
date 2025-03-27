@@ -1,0 +1,55 @@
+:root {
+    --primary-color: #1e90ff;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 900px; 
+    margin: 0 auto;
+    line-height: 1.6;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: var(--secondary-color);
+    perspective: 1000px;
+    position: relative;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transform: rotateY(-15deg);
+    transition: all 0.5s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05) rotateY(0);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.header {
+    text-align: center;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
